@@ -62,6 +62,35 @@ namespace DesignPatternTest.ControllerTest
         }
 
         [Test]
+        public async Task GetState_ReturnsOkWithTaskState()
+        {
+            var taskId = 1;
+            var task = new TaskDTO { Id = taskId, Name = "Task 1", State = ETaskState.InProgress };
+            _taskServiceMock.Setup(service => service.GetById(taskId)).ReturnsAsync(task);
+
+            var result = await _taskController.GetState(taskId);
+
+            var okResult = result.Result as OkObjectResult;
+            Assert.IsNotNull(okResult);
+            Assert.AreEqual(200, okResult.StatusCode);
+            Assert.AreEqual($"A tarefa está na área {ETaskStateExtensions.GetState(task.State)}.", okResult.Value);
+        }
+
+        [Test]
+        public async Task GetState_ReturnsNotFoundWhenTaskNotFound()
+        {
+            var taskId = 1;
+            _taskServiceMock.Setup(service => service.GetById(taskId)).ReturnsAsync((TaskDTO)null);
+
+            var result = await _taskController.GetState(taskId);
+
+            var notFoundResult = result.Result as NotFoundObjectResult;
+            Assert.IsNotNull(notFoundResult);
+            Assert.AreEqual(404, notFoundResult.StatusCode);
+            Assert.AreEqual("Tarefa não encontrada!", notFoundResult.Value);
+        }
+
+        [Test]
         public async Task Post_ReturnsCreatedAtRoute()
         {
             var newTask = new TaskDTO { Id = 1, Name = "New Task", State = ETaskState.Create };

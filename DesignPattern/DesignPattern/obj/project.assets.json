@@ -1521,24 +1521,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\santo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Aluno\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
       "projectName": "DesignPattern",
-      "projectPath": "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
-      "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPattern\\obj\\",
+      "projectPath": "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
+      "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPattern\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1546,7 +1541,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1629,7 +1623,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
