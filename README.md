@@ -17,7 +17,7 @@ Os testes unitários para a API estão localizados na pasta `Tests` do projeto. 
 
 ### No via linha de comando
 
-Abra o Console do Gerenciado de Pacotes (`Aba Ferramentas > Gerenciador de Pacotes do NuGet > Console do Gerenciado de Pacotes`) e use o comando abaixo no terminal integrado para executar todos os testes.
+Abra o Console do Gerenciado de Pacotes (`Aba Ferramentas` > `Gerenciador de Pacotes do NuGet` > `Console do Gerenciado de Pacotes`) e use o comando abaixo no terminal integrado para executar todos os testes.
 ```
 dotnet test
 ```
@@ -75,24 +75,16 @@ A `TaskController` gerencia operações CRUD para tarefas usando métodos HTTP p
 
 ### Criando o Banco de Dados
 
-1. Abra o Console do Gerenciado de Pacotes (`Aba Ferramentas > Gerenciador de Pacotes do NuGet > Console do Gerenciado de Pacotes`).
+1. Abra o Console do Gerenciado de Pacotes (`Aba Ferramentas` > `Gerenciador de Pacotes do NuGet` > `Console do Gerenciado de Pacotes`).
 2. Execute o comando abaixo para criar o Banco de Dados.
 ```
 update-database
 ```
 
-### Criando o Banco de Dados
-
-1. Abra o Console do Gerenciado de Pacotes (`Aba Ferramentas > Gerenciador de Pacotes do NuGet > Console do Gerenciado de Pacotes`).
-2. Execute o comando abaixo para criar o Banco de Dados.
-```
-update-database
-```
-
-## Executar a Solução
+### Executar a Solução
 
 1. Clique no botão run com o nome "https". O Visual Studio irá executar a solução e abrir o Swagger em um navegador.
 
 ## Conclusão
 
-Agradeço por sua presença.
+Agradeço por sua presença até aqui. Até mais.
