@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using SGED.Objects.Enums;
+using DesignPattern.Objects.Enums;
 
-namespace SGED.Objects.Models.Entities
+namespace DesignPattern.Objects.Models.Entities
 {
     [Table("task")]
     public class TaskModel

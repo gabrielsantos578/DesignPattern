@@ -1,6 +1,7 @@
-﻿using SGED.Objects.Interfaces;
+﻿using DesignPattern.Objects.Interfaces;
+using DesignPattern.Objects.TaskState;
 
-namespace SGED.Objects.Enums
+namespace DesignPattern.Objects.Enums
 {
     public enum ETaskState
     {
@@ -12,12 +13,16 @@ namespace SGED.Objects.Enums
 
     public static class ETaskStateExtensions
     {
-        public static ETaskState Create(ETaskState taskState, string error) => ITaskStateExtensions.Create(taskState, error);
-
-        public static ETaskState InProgress(ETaskState taskState, string error) => ITaskStateExtensions.InProgress(taskState, error);
-
-        public static ETaskState Concluded(ETaskState taskState, string error) => ITaskStateExtensions.Concluded(taskState, error);
-
-        public static ETaskState Canceled(ETaskState taskState, string error) => ITaskStateExtensions.Canceled(taskState, error);
+        public static string GetState(ETaskState taskEnum)
+        {
+            return taskEnum switch
+            {
+                ETaskState.Create => "Criada",
+                ETaskState.InProgress => "Em Progresso",
+                ETaskState.Concluded => "Concluída",
+                ETaskState.Canceled => "Cancelada",
+                _ => "Criada"
+            };
+        }
     }
 }

@@ -1,13 +1,14 @@
-﻿using SGED.Objects.Enums;
+﻿using DesignPattern.Objects.TaskState;
+using DesignPattern.Objects.Enums;
 
-namespace SGED.Objects.Interfaces
+namespace DesignPattern.Objects.Interfaces
 {
     public interface ITaskState
     {
-        bool Create(string error);
-        bool InProgress(string error);
-        bool Concluded(string error);
-        bool Canceled(string error);
+        bool Create(ref string error);
+        bool InProgress(ref string error);
+        bool Concluded(ref string error);
+        bool Canceled(ref string error);
     }
 
     public static class ITaskStateExtensions
@@ -24,28 +25,28 @@ namespace SGED.Objects.Interfaces
             };
         }
 
-        public static ETaskState Create(ETaskState taskEnum, string error)
+        public static ETaskState Create(ETaskState taskEnum, ref string error)
         {
             ITaskState taskInterface = CreateState(taskEnum);
-            return taskInterface.Create(error) ? ETaskState.Create : taskEnum;
+            return taskInterface.Create(ref error) ? ETaskState.Create : taskEnum;
         }
 
-        public static ETaskState InProgress(ETaskState taskEnum, string error)
+        public static ETaskState InProgress(ETaskState taskEnum, ref string error)
         {
             ITaskState taskInterface = CreateState(taskEnum);
-            return taskInterface.InProgress(error) ? ETaskState.InProgress : taskEnum;
+            return taskInterface.InProgress(ref error) ? ETaskState.InProgress : taskEnum;
         }
 
-        public static ETaskState Concluded(ETaskState taskEnum, string error)
+        public static ETaskState Concluded(ETaskState taskEnum, ref string error)
         {
             ITaskState taskInterface = CreateState(taskEnum);
-            return taskInterface.Concluded(error) ? ETaskState.Concluded : taskEnum;
+            return taskInterface.Concluded(ref error) ? ETaskState.Concluded : taskEnum;
         }
 
-        public static ETaskState Canceled(ETaskState taskEnum, string error)
+        public static ETaskState Canceled(ETaskState taskEnum, ref string error)
         {
             ITaskState taskInterface = CreateState(taskEnum);
-            return taskInterface.Canceled(error) ? ETaskState.Canceled : taskEnum;
+            return taskInterface.Canceled(ref error) ? ETaskState.Canceled : taskEnum;
         }
     }
 }

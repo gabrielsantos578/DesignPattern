@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPatternTest\\DesignPatternTest.csproj": {}
+    "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPatternTest\\DesignPatternTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPatternTest\\DesignPatternTest.csproj": {
+    "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPatternTest\\DesignPatternTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPatternTest\\DesignPatternTest.csproj",
+        "projectUniqueName": "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPatternTest\\DesignPatternTest.csproj",
         "projectName": "DesignPatternTest",
-        "projectPath": "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPatternTest\\DesignPatternTest.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPatternTest\\obj\\",
+        "projectPath": "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPatternTest\\DesignPatternTest.csproj",
+        "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPatternTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj": {
-                "projectPath": "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj"
+              "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj": {
+                "projectPath": "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj"
               }
             }
           }
@@ -81,21 +86,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj": {
+    "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
+        "projectUniqueName": "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
         "projectName": "DesignPattern",
-        "projectPath": "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Downloads\\DesignPattern\\DesignPattern\\DesignPattern\\obj\\",
+        "projectPath": "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPattern\\DesignPattern.csproj",
+        "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\santo\\OneDrive\\Área de Trabalho\\Fatec\\Repository\\DesignPattern\\DesignPattern\\DesignPattern\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,6 +112,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -185,7 +195,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

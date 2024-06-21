@@ -3,7 +3,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace SGED.Objects.Utilities
+namespace DesignPattern.Objects.Utilities
 {
     public static class Operator
     {

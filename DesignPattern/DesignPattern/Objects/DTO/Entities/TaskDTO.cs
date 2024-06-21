@@ -1,10 +1,10 @@
-﻿using SGED.Objects.Enums;
-using SGED.Objects.Interfaces;
-using SGED.Objects.Utilities;
+﻿using DesignPattern.Objects.Enums;
+using DesignPattern.Objects.Interfaces;
+using DesignPattern.Objects.Utilities;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace SGED.Objects.DTO.Entities
+namespace DesignPattern.Objects.DTO.Entities
 {
     public class TaskDTO
     {
@@ -12,11 +12,12 @@ namespace SGED.Objects.DTO.Entities
 
         [Required(ErrorMessage = "The name is required!")]
         [MinLength(2)]
-        [MaxLength(100)]
+        [MaxLength(50)]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "The description is required!")]
-        [MaxLength(200)]
+        [MinLength(10)]
+        [MaxLength(300)]
         public string Description { get; set; }
 
         public ETaskState State { get; set; }
@@ -25,10 +26,36 @@ namespace SGED.Objects.DTO.Entities
         public string? Error { get; set; }
 
 
-        public void Create() => this.State = ITaskStateExtensions.Create(this.State, this.Error);
-        public void InProgress() => this.State = ITaskStateExtensions.InProgress(this.State, this.Error);
-        public void Concluded() => this.State = ITaskStateExtensions.Concluded(this.State, this.Error);
-        public void Canceled() => this.State = ITaskStateExtensions.Canceled(this.State, this.Error);
-        public bool ErrorOccurred() => !Operator.IsNullString(this.Error);
+        public bool Create()
+        {
+            string? tempError = this.Error;
+            this.State = ITaskStateExtensions.Create(this.State, ref tempError);
+            this.Error = tempError;
+            return Operator.IsNullString(this.Error);
+        }
+
+        public bool InProgress()
+        {
+            string? tempError = this.Error;
+            this.State = ITaskStateExtensions.InProgress(this.State, ref tempError);
+            this.Error = tempError;
+            return Operator.IsNullString(this.Error);
+        }
+
+        public bool Concluded()
+        {
+            string? tempError = this.Error;
+            this.State = ITaskStateExtensions.Concluded(this.State, ref tempError);
+            this.Error = tempError;
+            return Operator.IsNullString(this.Error);
+        }
+
+        public bool Canceled()
+        {
+            string? tempError = this.Error;
+            this.State = ITaskStateExtensions.Canceled(this.State, ref tempError);
+            this.Error = tempError;
+            return Operator.IsNullString(this.Error);
+        }
     }
 }
