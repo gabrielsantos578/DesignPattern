@@ -117,3 +117,5 @@ C:\Users\santo\OneDrive\Área de Trabalho\Fatec\Repository\DesignPattern\DesignP
 C:\Users\santo\OneDrive\Área de Trabalho\Fatec\Repository\DesignPattern\DesignPattern\DesignPatternTest\obj\Debug\net7.0\DesignPatternTest.pdb
 C:\Users\santo\OneDrive\Área de Trabalho\Fatec\Repository\DesignPattern\DesignPattern\DesignPatternTest\obj\Debug\net7.0\DesignPatternTest.genruntimeconfig.cache
 C:\Users\santo\OneDrive\Área de Trabalho\Fatec\Repository\DesignPattern\DesignPattern\DesignPatternTest\obj\Debug\net7.0\ref\DesignPatternTest.dll
+C:\Users\santo\OneDrive\Área de Trabalho\Fatec\Repository\DesignPattern\DesignPattern\DesignPatternTest\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\santo\OneDrive\Área de Trabalho\Fatec\Repository\DesignPattern\DesignPattern\DesignPatternTest\bin\Debug\net7.0\Moq.dll
