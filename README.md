@@ -1,6 +1,10 @@
 # Sistema de Gerenciamento de Tarefas
 
-Este é um sistema simples de gerenciamento de tarefas, construído usando ASP.NET Core. O sistema permite a criação, atualização, remoção e consulta de tarefas através de uma API RESTful.
+Este é um sistema simples de gerenciamento de tarefas, construído em ASP.NET Core. O sistema permite a criação, atualização, remoção e consulta de tarefas através de uma API RESTful.
+
+## Resumo
+
+Esta documentação fornece uma visão abrangente de como configurar o ambiente de desenvolvimento, executar testes, criar o banco de dados e executar o projeto utilizando o Visual Studio. Certifique-se de adaptar as instruções e descrições conforme necessário para corresponder ao seu projeto específico.
 
 ## Executando os Testes
 
@@ -8,18 +12,21 @@ Os testes unitários para a API estão localizados na pasta `Tests` do projeto. 
 
 ### No Visual Studio
 
-1. Abra o Test Explorer.
-2. Clique em "Run All" para executar todos os testes unitários.
+1. Abra o Test Explorer ou Explorador de Teste.
+2. Clique em "Run All" ou "Executar" para executar todos os testes unitários.
 
-### No Visual Studio Code ou via linha de comando
+### No via linha de comando
 
-Use `dotnet test` no terminal integrado para executar todos os testes.
+Abra o Console do Gerenciado de Pacotes (`Aba Ferramentas > Gerenciador de Pacotes do NuGet > Console do Gerenciado de Pacotes`) e use o comando abaixo no terminal integrado para executar todos os testes.
+```
+dotnet test
+```
 
 ## Testes Implementados
 
 ### TaskController
 
-A `TaskController` gerencia operações CRUD para tarefas usando métodos HTTP padrão (GET, POST, PUT, DELETE). Abaixo estão os testes implementados para validar o comportamento da `TaskController`:
+A `TaskController` gerencia operações CRUD para tarefas usando métodos HTTP padrão (GET, POST, PUT, DELETE). Abaixo estão os testes implementados na `TaskControllerTest` para validar o comportamento da `TaskController`:
 
 - **Obter todas as tarefas (`GetAll`):**
   - Verifica se todas as tarefas são retornadas com sucesso.
@@ -29,6 +36,11 @@ A `TaskController` gerencia operações CRUD para tarefas usando métodos HTTP p
   - Verifica se uma tarefa específica é retornada corretamente quando buscada pelo ID.
   - Verifica o código de status `200 OK`.
   - Verifica o retorno `404 Not Found` se a tarefa não existe.
+
+- **Obter estado da tarefa por ID (`GetState`):**
+  - Verifica se o estado atual de uma tarefa é retornado corretamente quando solicitado pelo seu ID.
+  - Verifica o código de status `200 OK` quando a tarefa é encontrada e seu estado é retornado.
+  - Verifica o código de status `404 Not Found` se a tarefa não puder ser encontrada com o ID fornecido.
 
 - **Criar nova tarefa (`Post`):**
   - Verifica se uma nova tarefa pode ser criada corretamente.
@@ -59,6 +71,28 @@ A `TaskController` gerencia operações CRUD para tarefas usando métodos HTTP p
   - Verifica o código de status `200 OK`.
   - Verifica o retorno de `404 Not Found` se a tarefa não existir ou não puder ser removida.
 
+## Executando o Projeto
+
+### Criando o Banco de Dados
+
+1. Abra o Console do Gerenciado de Pacotes (`Aba Ferramentas > Gerenciador de Pacotes do NuGet > Console do Gerenciado de Pacotes`).
+2. Execute o comando abaixo para criar o Banco de Dados.
+```
+update-database
+```
+
+### Criando o Banco de Dados
+
+1. Abra o Console do Gerenciado de Pacotes (`Aba Ferramentas > Gerenciador de Pacotes do NuGet > Console do Gerenciado de Pacotes`).
+2. Execute o comando abaixo para criar o Banco de Dados.
+```
+update-database
+```
+
+## Executar a Solução
+
+1. Clique no botão run com o nome "https". O Visual Studio irá executar a solução e abrir o Swagger em um navegador.
+
 ## Conclusão
 
-Esta documentação fornece uma visão geral clara de como configurar o ambiente de desenvolvimento, executar os testes e descreve os testes específicos implementados para cada operação na `TaskController`. Certifique-se de adaptar as instruções e descrições conforme necessário para corresponder ao seu projeto específico.
+Agradeço por sua presença.
